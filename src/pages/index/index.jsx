@@ -3,6 +3,7 @@ import React from "react";
 import { TokenomicsBox } from "common/app/index/TokenomicsBox";
 import { Banner } from "common/app/index/Banner";
 import { Digital } from "common/app/index/Digital";
+import { Mission } from "common/app/index/Mission";
 
 import "styles/home.css";
 import { tokenCardItems } from "mock/index";
@@ -29,6 +30,9 @@ export const Home = () => {
             <TokenomicsBox tokenItems={tokenCardItems} />
           </div>
         </div>
+      </div>
+      <div className="section_digital">
+        <Mission />
       </div>
     </div>
   );
