@@ -1,0 +1,204 @@
+.home_page {
+  background-color: #1e1e1e;
+}
+.banner_section {
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+}
+.banner_heading {
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  width: 685px;
+}
+.banner_content {
+  color: #8f8f8f;
+  font-family: Atami;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  width: 690px;
+}
+.frog_img img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  margin-top: 50px;
+}
+.section_digital {
+  margin-top: 100px;
+}
+.head_second {
+  color: #fff;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.para_second {
+  color: #8f8f8f;
+  font-family: Atami;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.tokenomics_section {
+  margin-top: 50px;
+}
+.tokenomics_heading {
+  color: #fff;
+  font-family: Chewy;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tokenomics_content {
+  color: #8f8f8f;
+  font-family: Atami;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  width: 1138px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.token_card .card-body {
+  padding: 35px;
+}
+
+.token_card {
+  border-radius: 30px;
+  height: 100%;
+  max-height: 300px;
+  background: #2f3e46;
+}
+.token_card .discount {
+  background: #161b1e;
+  width: 100px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: relative;
+  left: -35px;
+}
+.token_card .discount p {
+  color: #84a98c;
+  text-align: center;
+  margin: 0;
+  font-family: Chewy;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+.token_card .card_head {
+  color: #84a98c;
+  font-family: Chewy;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+.token_card .card_content {
+  margin: 15px 0;
+  color: #8f8f8f;
+  font-family: Atami;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1399px) {
+  .banner_heading {
+    font-size: 65px;
+  }
+  .banner_content {
+    font-size: 18px;
+    width: 550px;
+  }
+  .head_second {
+    font-size: 45px;
+  }
+  .para_second {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .banner_heading {
+    font-size: 50px;
+    width: 450px;
+  }
+  .banner_content {
+    font-size: 16px;
+    width: 450px;
+  }
+
+  .head_second {
+    font-size: 40px;
+  }
+  .para_second {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .banner_heading {
+    font-size: 40px;
+    width: 390px;
+  }
+  .banner_content {
+    font-size: 14px;
+    width: 351px;
+  }
+  .head_second {
+    font-size: 35px;
+  }
+  .para_second {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .banner_heading {
+    margin-top: 15px;
+    font-size: 40px;
+    width: 100%;
+  }
+  .banner_content {
+    font-size: 14px;
+    width: 100%;
+  }
+  .section_digital {
+    margin-top: 50px;
+  }
+  .head_second {
+    margin-top: 15px;
+    font-size: 35px;
+  }
+  .para_second {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner_heading {
+    font-size: 30px;
+    width: 100%;
+  }
+  .banner_content {
+    font-size: 14px;
+    width: 100%;
+  }
+  .section_digital {
+    margin-top: 30px;
+  }
+  .head_second {
+    font-size: 30px;
+  }
+  .para_second {
+    font-size: 14px;
+  }
+}
