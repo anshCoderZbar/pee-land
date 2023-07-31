@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 import logo from "common/assets/images/logo.png";
@@ -6,6 +6,18 @@ import "styles/layout.css";
 
 export const Header = () => {
   const [active, setActive] = useState(false);
+  useEffect(() => {
+    if (active) {
+      document.body.addEventListener("mousedown", () => setActive(false));
+    } else return;
+
+    return () => {
+      document.body.removeEventListener("mousedown", () => setActive(false));
+    };
+  }, [active]);
+
+  console.log(active);
+
   return (
     <nav>
       <div className="container">
