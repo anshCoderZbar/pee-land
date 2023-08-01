@@ -12,13 +12,13 @@ export const Mission = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <h2 className="head_second">The Digital World</h2>
+          <h2 className="head_second">Vision and Mission</h2>
           <p className="para_second">
-            Pepe Land is a virtual realm, divided into 500 individual plots,
-            each representing a distinct area with its own characteristics and
-            opportunities. These plots will be distributed among early
-            contributors through a presale on PinkSale Finance, ensuring a fair
-            and decentralized launch of the project.
+            Pepe Land's vision is to establish a vibrant and inclusive digital
+            world, fostering creativity, exploration, and community engagement.
+            The mission is to create an environment that rewards active
+            participation and offers a fun and secure space for users to
+            interact with the blockchain technology.
           </p>
         </div>
       </div>

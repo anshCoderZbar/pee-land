@@ -65,6 +65,17 @@ nav {
   font-style: normal;
   font-weight: 400;
 }
+.footer_resp {
+  justify-content: space-between;
+}
+.nav-active {
+  color: #fff !important;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+  font-family: Atami;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 401;
+}
 
 @media screen and (max-width: 1199px) {
   .navbar .menu {
@@ -107,5 +118,14 @@ nav {
   }
   .navbar::after {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer_resp {
+    justify-content: center !important;
+  }
+  .footer_resp img {
+    margin-bottom: 20px;
   }
 }

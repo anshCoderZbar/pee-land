@@ -3,8 +3,11 @@ import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 import logo from "common/assets/images/logo.png";
 import "styles/layout.css";
+import { header } from "mock/header";
+import { useLocation } from "react-router-dom";
 
 export const Header = () => {
+  const location = useLocation();
   const [active, setActive] = useState(false);
   useEffect(() => {
     if (active) {
@@ -15,9 +18,6 @@ export const Header = () => {
       document.body.removeEventListener("mousedown", () => setActive(false));
     };
   }, [active]);
-
-  console.log(active);
-
   return (
     <nav>
       <div className="container">
@@ -32,27 +32,20 @@ export const Header = () => {
             >
               <RxCross2 />
             </div>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Digital World</a>
-            </li>
-            <li>
-              <a href="#">Tokenomics</a>
-            </li>
-            <li>
-              <a href="#">Plot Airdrop</a>
-            </li>
-            <li>
-              <a href="#">Vision and Mission</a>
-            </li>
-            <li>
-              <a href="#">Roadmap</a>
-            </li>
-            <li>
-              <a href="#">Conclusion</a>
-            </li>
+            {header?.map((links) => {
+              return (
+                <li key={links?.id}>
+                  <a
+                    className={
+                      links?.slug === location?.hash ? "nav-active" : null
+                    }
+                    href={links?.slug}
+                  >
+                    {links?.name}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <div
             onClick={() => setActive(true)}

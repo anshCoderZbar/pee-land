@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex  align-items-center flex-wrap footer_resp">
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>

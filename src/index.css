@@ -19,6 +19,9 @@ body {
   max-width: 1600px !important;
   margin: 0px auto;
 }
+.primary-dark-color {
+  color: #161b1e !important;
+}
 
 @media only screen and (max-width: 600px) {
   .container {

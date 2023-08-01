@@ -9,7 +9,7 @@ export const tokenCardItems = [
   },
   {
     id: 2,
-    discount: "50%",
+    discount: "15%",
     heading: "Presale",
     diff: true,
     content:
@@ -42,5 +42,40 @@ export const tokenCardItems = [
   {
     id: 6,
     url: require("../../common/assets/images/frog-with-gold.png"),
+  },
+];
+
+export const airdropContent = [
+  {
+    id: 1,
+    percentage: "5%",
+    heading: "Legendary",
+    isDiff: false,
+    content:
+      "25 plots of land, representing rare and extraordinary territories with unique opportunities and higher rewards.",
+  },
+  {
+    id: 2,
+    percentage: "10%",
+    heading: "Epic",
+    isDiff: true,
+    content:
+      "50 plots of land, offering exciting adventures and valuable resources for intrepid explorers.",
+  },
+  {
+    id: 3,
+    percentage: "25%",
+    heading: "Rare",
+    isDiff: false,
+    content:
+      "125 plots of land, providing a balance between challenges and rewards, attracting a diverse range of players.",
+  },
+  {
+    id: 4,
+    percentage: "60%",
+    heading: "Normal",
+    isDiff: false,
+    content:
+      "The majority of the plots (300), designed for casual adventurers, providing a great starting point for newcomers to Pepe Land.",
   },
 ];
