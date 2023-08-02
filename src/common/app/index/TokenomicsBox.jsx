@@ -57,7 +57,7 @@ export const TokenomicsBox = ({ tokenItems }) => {
               inView ? "animate__animated animate__fadeInRight" : ""
             }`}
           >
-            <img src={frogImg} alt="image" />
+            <img src={frogImg} alt="ifrog_img" />
           </div>
         )}
       </InView>

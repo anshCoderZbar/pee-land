@@ -71,8 +71,8 @@ export const Home = () => {
                   ref={ref}
                   className={`row ${
                     inView
-                      ? "animate__animated animate__fadeInUp"
-                      : "animate__animated animate__fadeOut"
+                      ? "animate__animated animate__fadeInLeft"
+                      : "animate__animated "
                   }`}
                 >
                   <Airdrop airdropContent={airdropContent} />
