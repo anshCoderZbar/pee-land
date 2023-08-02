@@ -19,7 +19,7 @@ export const Header = () => {
     };
   }, [active]);
   return (
-    <nav>
+    <nav className="fadein fadein--one">
       <div className="container">
         <div className="navbar">
           <div className="logo">
@@ -37,7 +37,10 @@ export const Header = () => {
                 <li key={links?.id}>
                   <a
                     className={
-                      links?.slug === location?.hash ? "nav-active" : null
+                      links?.slug === location?.hash ||
+                      (links?.slug === "#" && !location?.hash)
+                        ? "nav-active"
+                        : null
                     }
                     href={links?.slug}
                   >

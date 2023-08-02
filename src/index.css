@@ -1,13 +1,20 @@
+@font-face {
+  font-family: "Atami";
+  src: url("../src/fonts/Atami-Regular.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Chewy", cursive;
   box-sizing: border-box;
 }
+
 html,
 body {
   overflow-x: hidden;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e !important;
+  scroll-padding-top: 100px;
 }
 
 .cursor-pointer {
@@ -21,11 +28,4 @@ body {
 }
 .primary-dark-color {
   color: #161b1e !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    max-width: 100% !important;
-    padding: 20px;
-  }
 }

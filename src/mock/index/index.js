@@ -11,7 +11,7 @@ export const tokenCardItems = [
     id: 2,
     discount: "15%",
     heading: "Presale",
-    diff: true,
+    diff: false,
     content:
       "During the presale on PinkSale Finance, 15% of the token supply will be available for interested investors and contributors to secure their plots in Pepe Land.",
   },
@@ -39,10 +39,6 @@ export const tokenCardItems = [
     content:
       "A portion of the tokens (10%) will be reserved to facilitate listing on centralized exchanges, providing more accessibility to traders and investors.",
   },
-  {
-    id: 6,
-    url: require("../../common/assets/images/frog-with-gold.png"),
-  },
 ];
 
 export const airdropContent = [
@@ -58,7 +54,7 @@ export const airdropContent = [
     id: 2,
     percentage: "10%",
     heading: "Epic",
-    isDiff: true,
+    isDiff: false,
     content:
       "50 plots of land, offering exciting adventures and valuable resources for intrepid explorers.",
   },

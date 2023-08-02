@@ -1,10 +1,65 @@
-.home_page {
-  background-color: #1e1e1e;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+.fadein {
+  opacity: 0;
+  animation: fadein ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.fadein--one {
+  animation-delay: 0.2s;
+}
+
+.fadein--two {
+  animation-delay: 0.3s;
+}
+
+.fadein--three {
+  animation-delay: 0.4s;
+}
+
+.fadein--four {
+  animation-delay: 0.5s;
+}
+
+.fadein--five {
+  animation-delay: 0.6s;
+}
+
+.fadein--six {
+  animation-delay: 0.7s;
+}
+.home_page {
+  position: relative;
+  z-index: 1;
+}
+.main-banner {
+  background-image: url("common/assets/images/digital.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 106vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
 .banner_section {
   width: 100%;
   height: 100%;
-  padding-top: 15px;
+  padding-top: 7em;
+  position: relative;
 }
 .banner_heading {
   color: #fff;
@@ -15,50 +70,87 @@
 }
 .banner_content {
   color: #8f8f8f;
-  font-family: Atami;
+  font-family: "Atami";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   width: 690px;
 }
-.frog_img img {
+.frog_img.xccc img {
   width: 100%;
+}
+.social_icons.top-s {
+  justify-content: left;
+  position: absolute;
+  bottom: 40px;
+}
+.social_icons.top-s .icon {
+  width: 50px;
+  height: 50px;
+  font-size: 26px;
+  background-color: #161b1e;
+  margin: 0 20px 0 0px;
+}
+.frog_img img {
+  width: 90%;
   height: 100%;
 }
 .content {
   margin-top: 50px;
 }
 .section_digital {
-  margin-top: 100px;
+  padding: 122px 0 90px 0;
+  margin-top: 14em;
 }
 .head_second {
   color: #fff;
   font-size: 54px;
   font-style: normal;
   font-weight: 400;
+  margin-bottom: 20px;
 }
-
 .para_second {
   color: #8f8f8f;
-  font-family: Atami;
-  font-size: 24px;
+  font-family: "Atami";
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
+  width: 93%;
+  line-height: 36px;
 }
 .tokenomics_section {
-  margin-top: 50px;
-  padding: 10px;
+  padding: 40px 0 200px 0;
   text-align: center;
+  position: relative;
 }
-
 .token_card .card-body {
   padding: 35px;
 }
-
+.frog_img {
+  position: relative;
+}
+.frog_img.vsag {
+  position: absolute;
+  width: 488px;
+  right: 9%;
+  bottom: 0;
+  z-index: 1;
+}
 .token_card {
   border-radius: 30px;
   min-height: 300px;
-  height: auto;
+  height: 100%;
+  transition: 0.3s;
+}
+.token_card:hover {
+  transition: 0.3s;
+  background-color: rgb(202, 210, 197) !important;
+}
+.token_card:hover .card_head {
+  color: #161b1e;
+}
+.token_card:hover .card_content {
+  color: #161b1e !important;
 }
 .token_card .discount {
   background: #161b1e;
@@ -86,12 +178,21 @@
 .token_card .card_content {
   margin: 15px 0;
   color: #8f8f8f;
-  font-family: Atami;
+  font-family: "Atami";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  text-align: left;
 }
-
+.section_digital.v_qaascv {
+  padding: 70px 0 70px 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.v_qaascv .frog_img img {
+  width: 100%;
+}
 .section_airdrop {
   background-image: url("common/assets/images/backs.svg");
   background-repeat: no-repeat;
@@ -99,7 +200,7 @@
   position: relative;
   top: -25px;
   width: 100%;
-  height: 1050px;
+  height: 997px;
 }
 .section_airdrop .airdrop_body {
   display: flex;
@@ -116,8 +217,8 @@
 }
 .section_airdrop .airdrop_content {
   color: #fff;
-  font-family: Atami;
-  font-size: 24px;
+  font-family: "Atami";
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   width: 850px;
@@ -126,14 +227,30 @@
 .airdrop_card {
   border-radius: 30px;
   background: #84a98c;
-  padding: 50px 40px !important;
-  margin: 50px auto !important;
-  width: auto !important;
+  padding: 40px 16px;
+  height: 100%;
+  transition: 0.3s;
+}
+.airdrop_card:hover {
+  background: #161b1e;
+  transition: 0.3s;
+}
+.airdrop_card:hover .airdrop_discount {
+  color: #cad2c5;
+  transition: 0.3s;
+}
+.airdrop_card:hover .airdrop_card_title {
+  color: #cad2c5;
+  transition: 0.3s;
+}
+.airdrop_card:hover .airdrop_card_content {
+  color: #cad2c5;
+  transition: 0.3s;
 }
 .airdrop_discount {
   text-align: center;
   font-family: Chewy;
-  font-size: 120px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 400;
   padding: 0 15px;
@@ -146,14 +263,17 @@
   padding: 0 15px;
 }
 .airdrop_card_content {
-  font-family: Atami;
+  font-family: "Atami";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   padding: 0 15px;
   width: 300px;
 }
-
+.section_airdrop .row {
+  position: relative;
+  overflow: hidden;
+}
 .section_roadmap {
   background-image: url("common/assets/images/roadmap_bg.png");
   background-size: cover;
@@ -161,6 +281,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  background-position: right;
 }
 .roadmap_head {
   color: #fff;
@@ -172,17 +293,18 @@
 }
 .roadmap_content {
   display: block;
-  width: 663px;
+  width: 607px;
   color: #cad2c5;
   font-family: Chewy;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
+  margin-top: 20px;
 }
 
 .section_conclusion {
   text-align: center;
-  padding: 70px;
+  padding: 100px 0;
 }
 .tokenomics_heading,
 .conclusion_head {
@@ -194,12 +316,12 @@
 }
 .tokenomics_content,
 .conclusion_content {
-  width: 1292px;
-  margin: auto;
+  width: 1240px;
+  margin: 24px auto 60px auto;
   color: #8f8f8f;
   text-align: center;
-  font-family: Atami;
-  font-size: 24px;
+  font-family: "Atami";
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
 }
@@ -212,11 +334,42 @@
   display: grid;
   place-content: center;
   border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  margin: 50px 7px 0 7px;
-  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  font-size: 33px;
   background-color: #2f3e46;
+  margin: 0 13px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.icon:hover {
+  transition: 0.3s;
+}
+.icon:hover {
+  transition: 0.3s;
+  background-color: #52796f !important;
+}
+.section_conclusion.Throughsaa .conclusion_content {
+  margin: 10px auto 50px auto;
+}
+
+@media screen and (max-width: 1700px) {
+  .frog_img.vsag {
+    right: 46px;
+  }
+  .container {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  .airdrop_discount {
+    font-size: 80px;
+  }
+  .airdrop_card_content {
+    width: auto;
+  }
+  .social_icons.top-s {
+    bottom: 10px;
+  }
 }
 @media screen and (max-width: 1399px) {
   .banner_heading {
@@ -256,9 +409,34 @@
     margin: 45px 7px 0 7px;
     font-size: 22px;
   }
+  .frog_img.vsag {
+    right: 0%;
+  }
+  .social_icons.top-s {
+    bottom: 0;
+  }
+  .token_card .card-body {
+    padding: 35px 20px;
+  }
+  .token_card .discount {
+    left: -21px;
+    padding: 8px 0;
+  }
+  .token_card .card_head {
+    font-size: 33px;
+  }
+  .airdrop_card_content {
+    font-size: 18px;
+  }
+  .section_airdrop {
+    height: 858px;
+  }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1250px) {
+  .main-banner {
+    height: 100vh;
+  }
   .banner_heading {
     font-size: 50px;
     width: 450px;
@@ -267,7 +445,9 @@
     font-size: 16px;
     width: 450px;
   }
-
+  .social_icons.top-s {
+    bottom: -39px;
+  }
   .head_second {
     font-size: 40px;
   }
@@ -296,22 +476,98 @@
     margin: 40px 7px 0 7px;
     font-size: 20px;
   }
+  .airdrop_card {
+    padding: 23px 6px;
+  }
+  .airdrop_discount {
+    font-size: 60px;
+  }
+  .airdrop_card_title {
+    font-size: 30px;
+  }
+  .airdrop_card_content {
+    font-size: 17px;
+  }
+  .section_airdrop .airdrop_content {
+    font-size: 18px;
+  }
+  .section_airdrop {
+    height: 740px;
+  }
+  .roadmap_content {
+    width: 479px;
+    font-size: 23px;
+  }
+  .section_conclusion.Throughsaa .conclusion_content {
+    margin: 10px auto 30px auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .section_digital {
+    margin-top: 10em;
+  }
+  .frog_img.vsag {
+    right: 5%;
+    width: 434px;
+  }
+  .banner_content {
+    font-size: 16px;
+    width: 450px;
+    margin-top: 1em;
+  }
+  .token_card .card_content {
+    font-size: 18px;
+  }
+  .para_second {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .section_roadmap {
+    background-position: 80% 100%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .main-banner {
+    height: 59vh;
+  }
   .banner_heading {
-    font-size: 40px;
+    font-size: 36px;
     width: 390px;
   }
   .banner_content {
     font-size: 14px;
-    width: 351px;
+    width: 100%;
+    line-height: 22px;
+  }
+  .social_icons.top-s {
+    bottom: -60px;
+  }
+  .section_digital {
+    margin-top: 13em;
+    padding: 122px 0 60px 0;
   }
   .head_second {
     font-size: 35px;
   }
   .para_second {
     font-size: 16px;
+    line-height: 27px;
+  }
+  .token_card .card_head {
+    font-size: 30px;
+  }
+  .token_card .discount p {
+    font-size: 30px;
+  }
+  .token_card .card_content {
+    font-size: 17px;
+  }
+  .social_icons.top-s .icon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    margin: 0 15px 0 0px;
   }
   .section_airdrop .airdrop_body {
     display: block;
@@ -321,10 +577,10 @@
     padding: 50px;
   }
   .section_airdrop .airdrop_head {
-    font-size: 40px;
+    font-size: 35px;
   }
   .section_airdrop .airdrop_content {
-    font-size: 18px;
+    font-size: 17px;
     width: 100%;
   }
   .tokenomics_heading,
@@ -336,9 +592,75 @@
     width: 650px;
     font-size: 16px;
   }
+  .tokenomics_section {
+    padding: 40px 0 140px 0;
+  }
+  .frog_img.vsag {
+    right: 3%;
+    width: 417px;
+  }
+  .section_airdrop .row .col-md-6.col-lg-3.col-xl-3 {
+    margin-bottom: 22px;
+  }
+  .section_airdrop {
+    height: 1000px;
+    background-position: center;
+  }
+  .section_airdrop .airdrop_body {
+    padding: 72px 0 50px 0;
+  }
+  .section_roadmap {
+    background-position: 81% 100%;
+  }
+  .roadmap_content {
+    width: 409px;
+    font-size: 19px;
+  }
+  .roadmap_head {
+    font-size: 35px;
+  }
+  .section_conclusion.Throughsaa .conclusion_content {
+    margin: 9px auto 8px auto;
+  }
+  .social_icons .icon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    margin: 30px 15px 0 0px;
+  }
+  .section_conclusion {
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 820px) {
+  .main-banner {
+    height: 66vh;
+  }
+  .section_digital {
+    margin-top: 10em;
+  }
+  .roadmap_content {
+    width: 342px;
+    font-size: 19px;
+  }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .banner_section {
+    padding-top: 4em;
+  }
+  .frog_img.xccc img {
+    width: 67%;
+    margin-bottom: 1em;
+  }
+  .main-banner {
+    height: 108vh;
+    background-position: unset;
+  }
   .banner_heading {
     margin-top: 15px;
     font-size: 40px;
@@ -349,17 +671,33 @@
     width: 100%;
   }
   .section_digital {
-    margin-top: 50px;
+    margin-top: 13em;
+  }
+  .frog_img {
+    position: relative;
+    text-align: center;
   }
   .head_second {
     margin-top: 15px;
     font-size: 35px;
+    text-align: center;
+  }
+  .frog_img img {
+    width: 52%;
+    height: 100%;
   }
   .para_second {
     font-size: 16px;
+    text-align: center;
+    width: 100%;
+    line-height: 23px;
   }
   .section_conclusion {
     padding: 35px;
+  }
+  .tokenomics_content,
+  .conclusion_content {
+    margin: 24px auto 46px auto;
   }
   .tokenomics_heading,
   .conclusion_head {
@@ -368,6 +706,36 @@
   .tokenomics_content,
   .conclusion_content {
     width: 100%;
+    margin: 0;
+    padding: 6px 20px;
+  }
+  .token_card .card_head {
+    font-size: 28px;
+  }
+  .token_card .card-body .d-flex.align-items-center {
+    display: block !important;
+  }
+  .token_card .discount {
+    left: 0;
+    padding: 15px 0;
+    margin: 0 auto;
+    border-radius: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: absolute;
+    top: -1px;
+    right: 0;
+  }
+  .airdrop_discount {
+    font-size: 56px;
+  }
+  .token_card .card-body {
+    padding: 96px 20px 44px 20px;
+    position: relative;
+  }
+  .token_card .card_content {
+    font-size: 17px;
+    text-align: center;
   }
   .icon {
     width: 50px;
@@ -375,8 +743,39 @@
     margin: 30px 7px 0 7px;
     font-size: 20px;
   }
+  .frog_img.vsag {
+    right: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 2em;
+  }
+  .airdrop_card {
+    padding: 23px 6px;
+    text-align: center;
+  }
+  .section_airdrop {
+    height: max-content;
+    background-position: center;
+  }
+  .v_qaascv .frog_img img {
+    width: 60%;
+  }
+  .section_roadmap {
+    background-image: url("common/assets/images/PHONES.jpg");
+    background-size: cover;
+    height: 667px;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    background-position: 5% 100%;
+    padding: 56px 0 0 0;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 565px) {
+  .main-banner {
+    height: 100vh;
+    background-position: unset;
+  }
   .banner_heading {
     font-size: 30px;
     width: 100%;
@@ -385,22 +784,32 @@
     font-size: 14px;
     width: 100%;
   }
-  .section_digital {
-    margin-top: 30px;
-  }
   .section_conclusion {
-    padding: 25px;
+    padding: 67px 20px;
   }
   .head_second {
     font-size: 30px;
   }
-  .para_second {
-    font-size: 14px;
+  .frog_img img {
+    width: 70%;
+    height: 100%;
+  }
+  .v_qaascv .frog_img img {
+    width: 90%;
   }
   .icon {
     width: 50px;
     height: 50px;
     margin: 20px 7px 0 7px;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .main-banner {
+    height: 130vh;
+    background-position: unset;
+  }
+  .section_digital {
+    margin-top: 10em;
   }
 }

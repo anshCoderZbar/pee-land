@@ -1,6 +1,10 @@
 /* header css */
 nav {
-  background-color: #1e1e1e;
+  background-color: #2f3e46;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
 }
 .navbar {
   width: 100%;
@@ -34,15 +38,26 @@ nav {
   align-items: center;
   height: 100%;
   padding: 0 15px;
+  line-height: 80px;
 }
 .navbar .menu li a {
   color: #52796f;
   text-decoration: none;
   white-space: nowrap;
   height: 100%;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: 'Atami';
+  transition: 0.3s;
 }
-
+.navbar .menu li a:hover {
+  color: #52796f;
+  text-decoration: none;
+  white-space: nowrap;
+  height: 100%;
+  text-transform: capitalize;
+  font-family: 'Atami';
+  transition: 0.3s;
+}
 .navbar .navOpen,
 .navbar .navClose {
   display: none;
@@ -61,41 +76,49 @@ nav {
 }
 .footer .copyright {
   color: #161b1e;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  font-family: 'Atami';
 }
 .footer_resp {
   justify-content: space-between;
 }
 .nav-active {
   color: #fff !important;
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: Atami;
   font-size: 18px;
   font-style: normal;
-  font-weight: 401;
+  font-weight: 400;
+  text-shadow: 1px 1px 0 BLACK;
 }
 
 @media screen and (max-width: 1199px) {
+  .logo img {
+    width: 140px;
+}
   .navbar .menu {
     display: flex;
     flex-direction: column;
     position: fixed;
-    background-color: darkseagreen;
+    background-color: #161b1e;
     height: 100vh;
-    min-width: 250px;
+    min-width: 320px;
     top: 0;
     right: -100%;
     line-height: normal;
-    padding: 20px;
     transition: all 0.5s ease;
-  }
+}
+  .navbar .navClose svg path {
+    fill: #84a98c;
+}
   .navbar .menu li {
     display: block;
     height: auto;
     line-height: 45px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgb(47 62 70);
+    padding: 0 24px;
   }
   .navbar .menu .navOpen {
     margin-right: 5%;
@@ -107,8 +130,8 @@ nav {
     display: block;
   }
   .navbar .navClose {
-    margin-bottom: 50px;
-  }
+    margin: 20px;
+}
   .navbar .menu .sub-menu {
     width: 100%;
     right: 100%;
@@ -119,6 +142,7 @@ nav {
   .navbar::after {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 500px) {

@@ -2,7 +2,7 @@ export const header = [
   {
     id: 1,
     name: "home",
-    slug: "#home",
+    slug: "#",
   },
   {
     id: 2,
