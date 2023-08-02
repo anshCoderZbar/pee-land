@@ -1,5 +1,4 @@
 import React from "react";
-import { InView } from "react-intersection-observer";
 
 export const Airdrop = ({ airdropContent }) => {
   return (
