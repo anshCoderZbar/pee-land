@@ -12,7 +12,12 @@ export const TokenomicsBox = ({ tokenItems }) => {
             key={data?.id}
             className="col-sm-12 col-md-6 col-lg-6 col-xl-4 mt-3"
           >
-            <div className="token_card">
+            <div
+              className="token_card"
+              style={{
+                backgroundColor: " #2f3e46",
+              }}
+            >
               <div className="card-body">
                 <div className="d-flex align-items-center">
                   <div className="discount">
